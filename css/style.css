@@ -1,0 +1,464 @@
+a {
+	color: #000000;
+}
+*:hover {
+	color:unset !important;
+}
+.mobile-menu {
+	display: none;
+}
+.scroll-desktop-menu .hamburger-icon, .scroll-desktop-menu .hamburger-icon:before, .scroll-desktop-menu .hamburger-icon:after {
+    background: black !important;
+}
+.hamburger-icon-wrapper {
+	top: 1em;
+	left: 1em;
+	height: 26px;
+	width: 26px;
+	cursor: pointer;
+	transform: translateY(-5px);
+	z-index: 99999999999;}
+
+.hamburger-icon, .hamburger-icon:before, .hamburger-icon:after {
+  content: '';
+  position: absolute;
+  border-radius: 1em;
+  height: 2px;
+  width: 26px;
+  background: black;
+  transition: all 0.2s ease }
+.hamburger-icon        { top: 0.75em  }
+.hamburger-icon:before { top: -0.55em }
+.hamburger-icon:after  { top: 0.55em  }
+.hamburger-active .hamburger-icon { background: transparent; transform: rotate(-135deg) }
+.hamburger-active .hamburger-icon:before, .hamburger-active .hamburger-icon:after { top: 0 }
+.hamburger-active .hamburger-icon:before { transform: rotate(90deg) }
+.hamburger-active .hamburger-icon, .hamburger-active .hamburger-icon:before, .hamburger-active .hamburger-icon:after {
+  background: white }
+
+.hamburger-menu {
+  transition: all 0.4s ease;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.9);
+  color: white;
+  text-align: center ;
+  z-index: 9;}
+.hamburger-active .hamburger-menu {
+  opacity: 1;
+  pointer-events: initial; }
+.hamburger-menu-list {
+  display: block;
+  transition: all 0.4s ease;
+  padding: 0;
+  list-style-type: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2) }
+.hamburger-active .hamburger-menu-list {
+  transform: translate(-50%, -50%) scale(1) }
+
+  .hamburger-menu a {
+    color: white !important;
+    display: block;
+    margin-bottom: 15px;
+}
+.hamburger-active .hamburger-icon, .hamburger-active .hamburger-icon:before, .hamburger-active .hamburger-icon:after {
+  background: white !important;
+}
+.hamburger-menu-list ul{
+ padding: 0;
+}
+.my-bg {
+	background: transparent;
+	position: fixed;
+	transition: .2s;
+	position-right:0;
+	width: 100%;
+	left: 0;
+	top:0;
+}
+.block-phones {
+	padding-top: 17px;
+	display: flex;
+	flex-direction: column;
+}
+.block-phones a{
+	padding: 0;
+}
+header a{
+	font-size: 14px;
+}
+.scroll-desktop-menu {
+	background: white;
+	box-shadow: 0 0 50px black;
+}
+.collapse a{
+	text-decoration: none;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding-bottom: 0;
+	padding-right: 0;
+	padding-left: 0;
+	margin-right: .5rem;
+	margin-left: .5rem;
+}
+.nav-item.active > a {
+	border-bottom: 5px solid #F54343;
+}
+.navbar-nav {
+	margin-left: 27px;
+}
+.navbar-brand {
+	margin-left: 25px;
+}
+
+.btn-whatsapp {
+	background: #1BD741;
+	border-radius: 4px;
+	color: #FFFFFF !important;
+	padding: 14px 19px;
+	margin-left: 27px;
+}
+
+.top-banner > .container > .banner-content {
+	position: absolute;
+	bottom: 25px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+}
+.banner-content {
+	text-align: center;
+}
+.banner-content a{
+	text-decoration: none;
+}
+.red-button {
+	background: #F54343;
+	border-radius: 4px;
+	padding: 14px 70px;
+	color: white !important;
+	font-weight: 600;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+}
+.scroll-down {
+	display: block;
+	margin-top: 70px;
+}
+.top-banner>.container {
+	height: 100vh;
+}
+.top-banner>.container h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-weight: 600;
+	font-size: 49px;
+	width: 100%;
+	text-align: center;
+}
+.about-us {
+	padding: 100px 0;
+}
+.about-us h3 {
+	text-transform: uppercase;
+	font-weight: 600;
+	color: black;
+	font-size: 40px;
+	margin-bottom: 50px;
+}
+.render-services h3 {
+	text-transform: uppercase;
+	font-weight: 600;
+	color: black;
+	font-size: 40px;
+	margin-bottom: 50px;
+}
+.render-services {
+	padding-bottom: 50px;
+	padding-top: 100px;
+}
+.advantage-section {
+	padding-bottom: 50px;
+}
+.comment-section {
+	padding: 100px 0;
+}
+.render-services a{
+	width: 30%;
+}
+.footer-section {
+	padding: 100px 0;
+	color: white !important;
+	position: relative;
+}
+.carousel-item img {
+	width: 100%;
+	object-fit: cover;
+}
+footer {
+	background: #0071BC;
+	padding: 30px 0;
+}
+footer a {
+	color: white;
+}
+footer a:hover {
+	color: white !important;
+}
+.flex-box{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.service-block {
+	flex-wrap: wrap;
+}
+
+.services-block p{
+	width: 100%;
+	background: #ffffffeb;
+	padding: 15px 0;
+	margin: 0;
+	text-align: center;
+}
+
+.col-sm-4 {
+	margin-bottom: 25px;
+}
+.card img {
+	height: 225px;
+	object-fit: cover;
+}
+.card-body p {
+	height: 200px;
+}
+.card-body>.red-button {
+	padding: 14px 30px;
+}
+/*
+.flex-box a:nth-child(1) > div{
+	background: url(../image/montaj.jpg);
+	background-size: cover;
+}
+.flex-box a:nth-child(2) > div{
+	background: url(../image/ustanovka-okon.jpg);
+	background-size: cover;
+}
+.flex-box a:nth-child(3) > div{
+	background: url(../image/uteplenie-sten.jpg);
+	background-size: cover;
+}
+.flex-box a:nth-child(4) > div{
+	background: url(../image/osvewenie.jpg);
+	background-size: cover;
+}
+.flex-box a:nth-child(5) > div{
+	background: url(../image/napolnoe-pokrytie.jpg);
+	background-size: cover;
+}
+.flex-box a:nth-child(6) > div{
+	background: url(../image/teplye-poly.jpg);
+	background-size: cover;
+}
+.flex-box a:nth-child(7) > div{
+	background: url(../image/otdelka-balkona-vnutri.jpg);
+	background-size: cover;
+}
+.flex-box a:nth-child(8) > div{
+	background: url(../image/mebel-na-balkon.jpeg);
+	background-size: cover;
+}
+.flex-box a:nth-child(9) > div{
+	background: url(../image/zamena-steklo-paketa.jpg);
+	background-size: cover;
+}*/
+.img-advantage img {
+	margin-bottom: 25px;
+}
+.advantage> img {
+	transform: translateY(-230%);
+}
+.carousel-control-prev, .carousel-control-next {
+	background: black;
+	border-radius: 50%;
+	border: 0;
+	width: 70px;
+	height: 70px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.carousel-control-prev {
+	left: 50px;
+}
+.carousel-control-next {
+	right: 50px;
+}
+.carousel a:nth-child(4){
+	position: absolute;
+	bottom: 25px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.form-and-map {
+	position: relative;
+}
+.form-block {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top:-85px;
+}
+.form-block form {
+	background: #0071BC;
+	border-radius: 4px;
+	color: white;
+	text-align: center;
+	padding: 50px 55px;
+}
+.form-block form h3 {
+	font-size: 32px;
+	text-transform: uppercase;
+	position: relative;
+	margin-bottom: 40px;
+	padding-bottom: 20px;
+	color: white !important;
+}
+.form-block form h3::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #1F93FF;
+	width: 61px;
+	height: 6px;
+}
+.form-block form input[type="text"] {
+	padding: 15px 15px;
+	width: 100%;
+	border-radius: 4px;
+	border: 0;
+}
+.form-block form input[type="submit"] {
+	width: 100%;
+	border: 0;
+}
+.footer-section a {
+	position: absolute;
+	top: -31px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+<ul class="uk-slider-items uk-child-width-1-1@s uk-child-width-1-3@s uk-child-width-1-4@m">
+                            <div class="row">
+                            [[!pdoResources?parents=`5`
+                            &limit=`0`
+                            &tpl=`ourHaveOneA`
+                            &tplOdd=`ourHaveOddA`
+                            &includeContent=`1`
+                            &includeTVs=`resourceImage`]]
+                            </div>
+                        </ul>
+
+                        .uk-transition-fade
+@media screen and (max-width: 576px){
+	.mobile-menu {
+		display: block;
+	}
+	.about-us {
+		padding: 50px 0;
+	}
+	.footer-section {
+		padding-top: 57px 0;
+	}
+	.about-us h3 {
+		font-size: 25px;
+	}
+	.render-services {
+		padding: 50px 0;
+	}
+	.render-services h3 {
+		font-size: 25px;
+	}
+	.services-block p {
+		padding: 15px 69px;
+	}
+	.top-banner > .container h1 {
+		top: 37%;
+		font-size: 32px;
+		width: 92%;
+	}
+	.render-services a {
+		width: 100%;
+	}
+	.service-block {
+		flex-wrap: unset;
+		overflow-x: scroll;
+	}
+	.services-block {
+		width: auto;
+		margin-right: 15px;
+	}
+	.services-block p{
+		padding: 15px 69px;
+	}
+	.advantage {
+		flex-wrap: wrap;
+	}
+	.advantage > img {
+		display: none;
+	}
+	.img-advantage {
+		text-align: center;
+	}
+	.carousel-item {
+		height: 350px;
+	}
+	.carousel a:nth-child(4){
+		width: 90%;
+		text-align: center;
+	}
+	.carousel-control-prev, .carousel-control-next {
+		width: 50px;
+		height: 50px;
+	}
+	.form-block form {
+		padding: 25px;
+	}
+	.form-block form h3 {
+		font-size: 24px;
+	}
+	.carousel-control-prev {
+		left: 20px;
+	}
+	.carousel-control-next {
+		right: 20px;
+	}
+	.carousel-item img {
+		width: 100%;
+		height: 350px;
+	}
+	.col-sm-4 {
+		margin-bottom: 25px;
+	}
+	.card img {
+		height: 125px;
+		object-fit: cover;
+	}
+	.card-body h5 {
+		height: 48px;
+	}
+	.card-body>.red-button {
+		padding: 14px 70px;
+	}
+}
